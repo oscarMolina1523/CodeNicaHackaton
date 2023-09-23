@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeNiceAplication", "CodeNiceAplication.csproj", "{23CD87B1-2F0A-4FE0-BEDB-309A99F6DE1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23CD87B1-2F0A-4FE0-BEDB-309A99F6DE1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CD87B1-2F0A-4FE0-BEDB-309A99F6DE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CD87B1-2F0A-4FE0-BEDB-309A99F6DE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CD87B1-2F0A-4FE0-BEDB-309A99F6DE1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A250DDD2-9CAE-4373-BEED-32452B1DD607}
+	EndGlobalSection
+EndGlobal
