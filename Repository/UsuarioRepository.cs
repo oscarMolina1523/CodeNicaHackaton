@@ -32,7 +32,6 @@ namespace CodeNiceAplication.Repository
             await _usuarioContext.Usuarios.FindOneAndDeleteAsync(filter);
         }
 
-
         public async Task UpdateUsuario(Usuario updateUser)
         {
             var filter = Builders<Usuario>.Filter.Eq(doc => doc.Id, updateUser.Id);

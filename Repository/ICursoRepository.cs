@@ -6,9 +6,14 @@ namespace CodeNiceAplication.Repository
 {
     public interface ICursoRepository
     {
-        Task<IEnumerable<Curso>> GetCursos();
+        Task<IEnumerable<CursoDTO>> GetCursos();
+        Task<Curso> GetById(string Id);
         Task<Curso> CrearCurso(Curso nuevoCurso);
+        Task CrearModulo(string cursoId, Modulo nuevoModulo);
+        Task NuevaInscripcion(string cursoId, Inscripcion nuevaInscripcion);
+        Task CrearComentario(string cursoId, Comentario nuevoComentario);
+        Task CrearClase(string cursoId, string nombreModulo, Clase nuevaClase);
         Task DeleteById(string Id);
-        Task UpdateCurso(Curso cursoUpdate);
+        Task UpdateModulo(string cursoId, string nombreModulo, string nuevoNombre, string nuevaDescripcion);
     }
 }

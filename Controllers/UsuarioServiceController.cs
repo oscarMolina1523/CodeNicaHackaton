@@ -2,6 +2,7 @@
 using CodeNiceAplication.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,14 +21,14 @@ namespace CodeNiceAplication.Controllers
             _usuarioRepository = usuarioRepository;
         }
 
-        [HttpGet("usuarios")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
             var usuarios = await _usuarioRepository.GetUsuarios();
             return Ok(usuarios);
         }
 
-        [HttpPost("crearUsuario")]
+        [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario nuevoUsuario)
         {
             var usuarioCreado = await _usuarioRepository.CrearUsuario(nuevoUsuario);

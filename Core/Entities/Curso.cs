@@ -25,5 +25,14 @@ namespace CodeNiceAplication.Core.Entities
         [BsonElement("modulos")]
         public List<Modulo> ModulosCurso { get; set; }
 
+        [BsonElement("comentarios")]
+        public List<Comentario> ModulosComentario { get; set; }
+
+        [BsonElement("inscripcion")]
+        public List<Inscripcion> CursoIncripcion { get; set; }
+
+        [BsonElement("imagen")]
+        public List<Imagen> ImagenCurso { get; set; }
+
     }
 }

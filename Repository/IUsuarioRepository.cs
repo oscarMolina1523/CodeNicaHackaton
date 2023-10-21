@@ -1,4 +1,5 @@
 ﻿using CodeNiceAplication.Core.Entities;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace CodeNiceAplication.Repository
     {
         Task<IEnumerable<Usuario>> GetUsuarios();
         Task<Usuario> CrearUsuario(Usuario nuevoUsuario);
+       
         Task DeleteById(string Id);
         Task UpdateUsuario(Usuario userUpdate);
     }
